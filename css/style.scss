@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root{
+    --primary-font : 'Varela Round', sans-serif;
+    --secondry-font : 'Poppins', sans-serif;
+    --bg-color : #FFC0CB;
+    --bg-color-2 : #191970;
+    --text-color : #000000;
+    --text-color-2 : #F8F8FF;
+    --main-bg-color : #FFFFFF;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.theam-1{
+    font-family: var(--secondry-font);
+    background: var(--bg-color);
+
+    .title{
+        color: var(--bg-color-2);
+    }
+
+    #linkinput{
+        border: 1px solid var(--bg-color-2);
+
+        &::placeholder{
+            color: var(--bg-color-2);
+        }
+
+        &:placeholder-shown{
+            color: var(--bg-color-2);
+        }
+    }
+
+    #shortbtn{
+        background: var(--bg-color-2);
+        color: var(--text-color-2);
+
+        &:hover{
+            background: transparent;
+            border: 1px solid var(--bg-color-2);
+            color: var(--bg-color-2);
+        }
+    }
+
+    #showshortlink{
+        border: 1px solid var(--bg-color-2);
+        color: var(--bg-color-2);
+    }
+
+    #copybtn{
+        color: var(--bg-color-2);
+    }
+
+    #light{
+        border: 1px solid var(--bg-color-2);
+        color: var(--bg-color-2);
+    }
+
+    #dark{
+        border: none;
+        color: var(--bg-color-2);
+    }
+
+}
+
+.theam-2{
+    font-family: var(--primary-font);
+    background: var(--bg-color-2);
+
+    .title{
+        color: var(--bg-color);
+    }
+
+    #linkinput{
+        border: 1px solid var(--bg-color);
+
+        &::placeholder{
+            color: var(--bg-color);
+        }
+
+        &:placeholder-shown{
+            color: var(--bg-color);
+        }
+    }
+
+    #shortbtn{
+        background: var(--bg-color);
+        color: var(--text-color-2);
+
+        &:hover{
+            background: transparent;
+            border: 1px solid var(--bg-color);
+            color: var(--bg-color);
+        }
+    }
+
+    #showshortlink{
+        color: var(--bg-color);
+        border: 1px solid var(--bg-color);
+    }
+
+    #copybtn{
+        color: var(--bg-color);
+    }
+
+    #dark{
+        border: 1px solid var(--bg-color);
+        color: var(--bg-color);
+    }
+
+    #light{
+        border: none;
+        color: var(--bg-color);
+    }
+}
+
+main{
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+    padding: 15px 0;
+    border-radius: 12px;
+}
+
+.inputbox{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#shortbtn{
+    background: none;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+#linkinput{
+    background: none;
+
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+#showshortlink{
+    background: none;
+
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    user-select: none;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+#copybtn{
+    background: none;
+    border: none;
+    position: absolute;
+    right : 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#dark,#light{
+    padding: 5px;
+    border-radius: 12px;
+}
